@@ -1,13 +1,24 @@
 function hasTargetSum(array, target) {
-  // Write your algorithm here
-}
+  for (let i = 0; i < array.length; i++){
+    for (let j = i + 1; j < array.length; j++){
+      let twoNums = array[i] + array[j];
+      if (twoNums === target){
+        return true;
+      }
+      }
+    }
+    return false;
+  }
 
 /* 
   Write the Big O time complexity of your function here
 */
 
 /* 
-  Add your pseudocode here
+  write function that takes array and a target integer
+  if any two numbers in the array === the target => true
+  grab 0 number, add it to the remaining numbers
+  grab 1 num, add it to the remaining numbers, etc
 */
 
 /*
